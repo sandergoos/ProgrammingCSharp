@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 
 namespace Chapter1.Listing1_4
@@ -19,7 +20,7 @@ namespace Chapter1.Listing1_4
                 {
                     while (!stopped)
                     {
-                        Console.WriteLine("Thread {0}: count: {1}", x, count++);
+                        Console.WriteLine($"Thread {x}: count: {count++}");
                         Thread.Sleep(0);
                     }
                 })));
